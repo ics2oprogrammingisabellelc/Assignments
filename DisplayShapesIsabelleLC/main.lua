@@ -41,3 +41,72 @@ myParallelagram.anchorY = 100
 -- set the width of border
 myParallelagram.strokeWidth = 10
 
+-- set the color of the parallelagram
+myParallelagram:setFillColor(0, 1, 0)
+
+-- set the colkor of the border
+myParallelagram:setStrokeColor(1, 1, 1)
+
+-- create my local variables
+local myPentagon
+local verticesPentagon = { -80, -50, -65, 80, 90, 60, 30, -95, 10, 30 }
+
+myPentagon = display.newPolygon(200, 500, verticesPentagon)
+
+-- anchor the trapazoid in the top left corner of the screen and set its (x,y) position
+myPentagon.anchorX = 0.6
+myPentagon.anchorY = 100
+
+-- set the width of the border
+myPentagon.strokeWidth = 10
+
+-- set the color of my pentagon
+myPentagon:setFillColor(1, 0, 0)
+
+-- set the color of the border
+myPentagon:setStrokeColor(1, 1, 1)
+
+areaText = display.newText("Pentagon", 0,0, Arial, textSize)
+
+-- anchor the text and set its (x,y) position
+areaText.anchorX = 0
+areaText.anchorY = 0
+areaText.x = 80
+areaText.y = 550
+
+-- set text color
+areaText:setFillColor(1, 0, 0)
+
+areaText = display.newText("Triangle", 0,0, Arial, textSize)
+
+-- anchor the text and set its (x,y) position
+areaText.anchorX = 0
+areaText.anchorY = 0
+areaText.x = 416
+areaText.y = 550
+
+-- set text color
+areaText:setFillColor(0, 0, 1)
+
+areaText = display.newText("Parallelagram", 0,0, Arial, textSize)
+
+-- anchor the text and set its (x,y) position
+areaText.anchorX = 0
+areaText.anchorY = 0
+areaText.x = 650
+areaText.y = 550
+
+-- set text color
+areaText:setFillColor(0, 1, 0)
+
+local newTextSize = 30
+areaText = display.newText("Isabelle Loscher-Charette", 0,0, Arial, newTextSize)
+
+-- anchor the text and set its (x,y) position
+areaText.anchorX = 0
+areaText.anchorY = 0
+areaText.x = 50
+areaText.y = 25
+
+-- set text color
+areaText:setFillColor(1, 1, 1)
